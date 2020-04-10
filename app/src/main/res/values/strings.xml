@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">YourfirstinteractiveUI</string>
+    <string name="share_text_with">Share this text with:</string>
+
+    <string name="gojek">Gojek Same Day</string>
+    <string name="anteraja">Anter Aja</string>
+    <string name="ninja">Ninja Express</string>
+    <string name="wahana">Wahana</string>
+    <string name="sicepat">Si Cepat</string>
 </resources>

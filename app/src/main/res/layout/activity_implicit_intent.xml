@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".implict.intent.ImplicitIntent">
+
+   <EditText
+       android:id="@+id/edt_web"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginLeft="16dp"
+       android:text="https://teguhprasetyo03.github.io" />
+
+    <Button
+        android:id="@+id/btn_open_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#03A9F4"
+        android:text="Open Website"
+        android:onClick="OpenWebsite"
+        android:textColor="#fff"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/edt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Gudang Listrik" />
+
+    <Button
+        android:id="@+id/btn_open_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FF5722"
+        android:text="Open Location"
+        android:onClick="OpenLocation"
+        android:textColor="#fff"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/edt_text_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Teguh Prasetyo " />
+
+    <Button
+        android:id="@+id/btn_open_text_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#E91E63"
+        android:text="Open Text"
+        android:onClick="ShareText"
+        android:textColor="#fff"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>
