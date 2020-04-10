@@ -80,10 +80,26 @@ public class ClickLableImage extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.action_settings :
+                return true;
+            case R.id.action_message :
+                Intent pindah = new Intent(getApplicationContext(), OrderActivity.class);
+                pindah.putExtra(OrderActivity.EXTRA_MESSAGE, "Donuts");
+                startActivity(pindah);
+                Toast.makeText(this, "You Selected Order", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_status :
+                Toast.makeText(this, "You Selected Status", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_favorites :
+                Toast.makeText(this, "You Selected Favorites", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_contact :
+                Toast.makeText(this, "You Selected Selected Contact", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
         }
         return onOptionsItemSelected(item);
     }

@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".clicklable.image.OrderActivity"></activity>
-        <activity android:name=".clicklable.image.ClickLableImage">
+        <activity android:name=".alert.dialog.AlertDialog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".clicklable.image.OrderActivity" />
+        <activity android:name=".clicklable.image.ClickLableImage">
+
         </activity>
         <activity android:name=".support.libraries.SupportLibraries" />
         <activity android:name=".implict.intent.ImplicitIntent" />

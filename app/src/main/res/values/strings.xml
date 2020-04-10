@@ -2,9 +2,38 @@
     <string name="app_name">YourfirstinteractiveUI</string>
     <string name="share_text_with">Share this text with:</string>
 
+    // Radio button option
     <string name="gojek">Gojek Same Day</string>
     <string name="anteraja">Anter Aja</string>
     <string name="ninja">Ninja Express</string>
     <string name="wahana">Wahana</string>
     <string name="sicepat">Si Cepat</string>
+
+    //
+    <string name="action_order_message">You Selected Order</string>
+    <string name="action_status_message">You Selected Status</string>
+    <string name="action_favorites_message">You Selected Favorites</string>
+    <string name="action_selected_contact">You Selected Contact</string>
+
+    // array spinner
+    <string-array name="labels_name">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Office</item>
+        <item>Home</item>
+    </string-array>
+
+    <string name="date">Date:</string>
+    <string name="date_button">Date</string>
+    <string name="hello_world">Hello World! Choose a date:</string>
+    <string name="datepicker">datePicker</string>
+
+    <string name="hello_worlds">Hello World! Choose a time:</string>
+    <string name="time_button">Time</string>
+    <string name="time_toast">Time</string>
+    <string name="timepicker">timePicker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
