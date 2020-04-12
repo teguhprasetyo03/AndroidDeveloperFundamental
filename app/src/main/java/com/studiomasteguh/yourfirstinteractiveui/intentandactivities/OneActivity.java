@@ -1,15 +1,15 @@
 package com.studiomasteguh.yourfirstinteractiveui.intentandactivities;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.studiomasteguh.yourfirstinteractiveui.R;
 
@@ -24,7 +24,7 @@ public class OneActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        if (tvhead.getVisibility() == View.VISIBLE){
+        if (tvhead.getVisibility() == View.VISIBLE) {
             outState.putBoolean("reply_visible", true);
             outState.putString("reply_text", edt1.getText().toString());
         }
@@ -41,9 +41,9 @@ public class OneActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "--------");
         Log.d(LOG_TAG, "onCreate");
 
-        if (savedInstanceState != null){
+        if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
-            if (isVisible){
+            if (isVisible) {
                 tvhead.setVisibility(View.VISIBLE);
                 tvreply.setText(savedInstanceState.getString("reply_text"));
                 tvreply.setVisibility(View.VISIBLE);

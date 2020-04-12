@@ -1,12 +1,12 @@
-package com.studiomasteguh.yourfirstinteractiveui.alert.dialog;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
+package com.studiomasteguh.yourfirstinteractiveui.menu.pickers;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import com.studiomasteguh.yourfirstinteractiveui.R;
 
@@ -18,7 +18,7 @@ public class AlertDialog extends AppCompatActivity {
         setContentView(R.layout.activity_alert_dialog);
     }
 
-    public void onClickShowAlert(View view){
+    public void onClickShowAlert(View view) {
         androidx.appcompat.app.AlertDialog.Builder myAlertBuilder =
                 new androidx.appcompat.app.AlertDialog.Builder(AlertDialog.this);
 
@@ -45,12 +45,12 @@ public class AlertDialog extends AppCompatActivity {
         myAlertBuilder.show();
     }
 
-    public void ShowDatePicker(View view){
+    public void ShowDatePicker(View view) {
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), getString(R.string.datepicker));
     }
 
-    public void ProcessDatePickerResult(int date, int month, int year){
+    public void ProcessDatePickerResult(int date, int month, int year) {
         String month_string = Integer.toString(month + 1);
         String date_String = Integer.toString(date);
         String year_String = Integer.toString(year);
@@ -60,7 +60,7 @@ public class AlertDialog extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.date) + date_message, Toast.LENGTH_SHORT).show();
     }
 
-    public void ShowTimePicker(View view){
+    public void ShowTimePicker(View view) {
         DialogFragment newFragment = new TimePickerFragment();
         newFragment.show(getSupportFragmentManager(), getString(R.string.timepicker));
     }
@@ -69,7 +69,7 @@ public class AlertDialog extends AppCompatActivity {
         String hour_day = Integer.toString(hourOfDay);
         String minutes = Integer.toString(minute);
 
-        String time_message = (hour_day + ":" + minutes );
+        String time_message = (hour_day + ":" + minutes);
 
         Toast.makeText(this, getString(R.string.time_toast) + time_message, Toast.LENGTH_SHORT).show();
     }

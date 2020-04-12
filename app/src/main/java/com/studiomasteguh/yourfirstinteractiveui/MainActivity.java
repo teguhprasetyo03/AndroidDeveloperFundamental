@@ -1,16 +1,16 @@
 package com.studiomasteguh.yourfirstinteractiveui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button btn1, btn2,btn3;
+    Button btn1, btn2, btn3;
     TextView result;
     private int resultshow = 0;
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ++resultshow;
                 if (result != null)
-                result.setText(Integer.toString(resultshow));
+                    result.setText(Integer.toString(resultshow));
             }
         });
 

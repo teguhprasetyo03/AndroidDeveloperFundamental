@@ -1,22 +1,15 @@
-package com.studiomasteguh.yourfirstinteractiveui.alert.dialog;
+package com.studiomasteguh.yourfirstinteractiveui.menu.pickers;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.text.format.DateFormat;
+import android.widget.TimePicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-
-import android.text.format.DateFormat;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.TimePicker;
-
-import com.studiomasteguh.yourfirstinteractiveui.R;
 
 import java.util.Calendar;
 
@@ -39,8 +32,7 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
-        AlertDialog alertDialog =(AlertDialog) getActivity();
+        AlertDialog alertDialog = (AlertDialog) getActivity();
         alertDialog.ProcessTimePickerResult(hourOfDay, minute);
-
     }
 }

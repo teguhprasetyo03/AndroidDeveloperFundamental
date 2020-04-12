@@ -8,31 +8,31 @@
         android:title="Menu"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_message"
-        android:orderInCategory="100"
-        android:title="Status"
-        android:icon="@drawable/ic_shopping_cart_black_24dp"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/action_message"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Status"-->
+<!--        android:icon="@drawable/ic_shopping_cart_black_24dp"-->
+<!--        app:showAsAction="always" />-->
 
-    <item
-        android:id="@+id/action_status"
-        android:orderInCategory="100"
-        android:title="Status"
-        android:icon="@drawable/ic_info_black_24dp"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/action_status"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Status"-->
+<!--        android:icon="@drawable/ic_info_black_24dp"-->
+<!--        app:showAsAction="always" />-->
 
-    <item
-        android:id="@+id/action_favorites"
-        android:orderInCategory="100"
-        android:title="Favorites"
-        android:icon="@drawable/ic_favorite_black_24dp"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/action_favorites"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Favorites"-->
+<!--        android:icon="@drawable/ic_favorite_black_24dp"-->
+<!--        app:showAsAction="always" />-->
 
-    <item
-        android:id="@+id/action_contact"
-        android:orderInCategory="100"
-        android:title="Contact "
-        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
-        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/action_contact"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Contact "-->
+<!--        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"-->
+<!--        app:showAsAction="always" />-->
 </menu>

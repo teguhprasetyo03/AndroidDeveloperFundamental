@@ -1,17 +1,14 @@
-package com.studiomasteguh.yourfirstinteractiveui.alert.dialog;
+package com.studiomasteguh.yourfirstinteractiveui.menu.pickers;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
+import android.widget.DatePicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-
-
-import android.widget.DatePicker;
-
 
 import java.util.Calendar;
 
@@ -29,13 +26,13 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DATE);
 
-        return new DatePickerDialog(getActivity(),this, year, month, day);
+        return new DatePickerDialog(getActivity(), this, year, month, day);
     }
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int day) {
 
-       AlertDialog alertDialog =(AlertDialog) getActivity();
-       alertDialog.ProcessDatePickerResult(year, month, day);
+        AlertDialog alertDialog = (AlertDialog) getActivity();
+        alertDialog.ProcessDatePickerResult(year, month, day);
     }
 }

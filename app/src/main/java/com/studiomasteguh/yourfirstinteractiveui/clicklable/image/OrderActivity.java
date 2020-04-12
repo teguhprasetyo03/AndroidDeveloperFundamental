@@ -16,9 +16,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.studiomasteguh.yourfirstinteractiveui.R;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.studiomasteguh.yourfirstinteractiveui.R;
 
 public class OrderActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     public static final String EXTRA_MESSAGE = "eztra_message";
@@ -42,7 +42,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
 
         // create an spinner
         sp = findViewById(R.id.spinner);
-        if (sp != null){
+        if (sp != null) {
             sp.setOnItemSelectedListener(this);
         }
 
@@ -51,17 +51,17 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
                 R.array.labels_name,
                 android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        if (sp !=null){
+        if (sp != null) {
             sp.setAdapter(adapter);
         }
 
         phone = findViewById(R.id.edt_phone);
-        if (phone != null){
+        if (phone != null) {
             phone.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     boolean handled = false;
-                    if (actionId == EditorInfo.IME_ACTION_SEND){
+                    if (actionId == EditorInfo.IME_ACTION_SEND) {
                         dialNumber();
                         handled = true;
                     }
@@ -108,10 +108,10 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         }
     }
 
-    public void dialNumber(){
+    public void dialNumber() {
         phone = findViewById(R.id.edt_phone);
         String phoneNum = null;
-        if (phone != null)phoneNum = "tel : " + phone.getText().toString();
+        if (phone != null) phoneNum = "tel : " + phone.getText().toString();
 
         Log.d(TAG, "dialNumber: " + phoneNum);
 

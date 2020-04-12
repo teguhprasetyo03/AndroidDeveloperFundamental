@@ -1,8 +1,5 @@
 package com.studiomasteguh.yourfirstinteractiveui.clicklable.image;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.studiomasteguh.yourfirstinteractiveui.R;
@@ -81,22 +81,22 @@ public class ClickLableImage extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
-            case R.id.action_settings :
+        switch (item.getItemId()) {
+            case R.id.action_settings:
                 return true;
-            case R.id.action_message :
+            case R.id.action_message:
                 Intent pindah = new Intent(getApplicationContext(), OrderActivity.class);
                 pindah.putExtra(OrderActivity.EXTRA_MESSAGE, "Donuts");
                 startActivity(pindah);
                 Toast.makeText(this, "You Selected Order", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.action_status :
+            case R.id.action_status:
                 Toast.makeText(this, "You Selected Status", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.action_favorites :
+            case R.id.action_favorites:
                 Toast.makeText(this, "You Selected Favorites", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.action_contact :
+            case R.id.action_contact:
                 Toast.makeText(this, "You Selected Selected Contact", Toast.LENGTH_SHORT).show();
                 return true;
             default:

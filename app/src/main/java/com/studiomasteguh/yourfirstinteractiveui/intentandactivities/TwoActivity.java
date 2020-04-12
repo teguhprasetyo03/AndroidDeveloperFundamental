@@ -1,15 +1,13 @@
 package com.studiomasteguh.yourfirstinteractiveui.intentandactivities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.studiomasteguh.yourfirstinteractiveui.R;
 
@@ -18,8 +16,6 @@ public class TwoActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "EXTRA_REPLY";
     private static final String LOG_TAG = TwoActivity.class.getSimpleName();
     EditText mReply;
-
-
 
 
     @Override
@@ -72,7 +68,7 @@ public class TwoActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onDestroy");
     }
 
-    public void returnReply(View view){
+    public void returnReply(View view) {
         String reply = mReply.getText().toString();
         Intent replyIntent = new Intent();
         replyIntent.putExtra(EXTRA_REPLY, reply);

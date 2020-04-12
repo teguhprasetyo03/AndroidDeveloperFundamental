@@ -9,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".alert.dialog.AlertDialog">
+        <activity android:name=".user.navigation.NavDrawerExperiment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".clicklable.image.OrderActivity" />
-        <activity android:name=".clicklable.image.ClickLableImage">
+        <activity android:name=".user.navigation.ViewPagerActivity">
 
         </activity>
+        <activity android:name=".menu.pickers.AlertDialog" />
+        <activity
+            android:name=".clicklable.image.OrderActivity"
+            android:label="Order Activity"
+            android:parentActivityName=".clicklable.image.ClickLableImage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".clicklable.image.ClickLableImage" />
         <activity android:name=".support.libraries.SupportLibraries" />
         <activity android:name=".implict.intent.ImplicitIntent" />
         <activity

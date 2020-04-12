@@ -1,8 +1,5 @@
 package com.studiomasteguh.yourfirstinteractiveui.implict.intent;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ShareCompat;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,9 +7,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import com.studiomasteguh.yourfirstinteractiveui.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
 
-import java.net.URI;
+import com.studiomasteguh.yourfirstinteractiveui.R;
 
 public class ImplicitIntent extends AppCompatActivity {
     private EditText edtWeb;
